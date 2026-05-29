@@ -1,0 +1,13 @@
+# Allowlist .gitignore — ignora TODO el HOME por defecto y solo permite el proyecto skate-shop.
+# Esto protege archivos privados (.bash_history, .claude, .ssh, configs, tokens) de subirse por error.
+
+# Ignorar todo en la raíz
+/*
+
+# Permitir este .gitignore y la carpeta del proyecto
+!/.gitignore
+!/skate_co/
+
+# Dentro de skate_co, ignorar todo excepto skate-shop
+/skate_co/*
+!/skate_co/skate-shop/
